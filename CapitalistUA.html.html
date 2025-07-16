@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CapitalistUA — Інвестиції та Фінанси</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0; padding: 0;
+      background: #f8f9fa;
+      color: #212529;
+      line-height: 1.6;
+    }
+    header {
+      background: #1a1a2e;
+      color: #f0f0f0;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+    }
+    nav a {
+      color: #f0f0f0;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ff6f61;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    h2 {
+      color: #1a1a2e;
+      border-bottom: 3px solid #ff6f61;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+    article {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+      border-radius: 6px;
+    }
+    article h3 {
+      margin-top: 0;
+      color: #333;
+    }
+    article p {
+      margin-bottom: 0;
+      color: #555;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+      border-radius: 6px;
+      max-width: 400px;
+    }
+    form input[type="email"] {
+      width: calc(100% - 110px);
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px 0 0 4px;
+      outline: none;
+    }
+    form button {
+      width: 100px;
+      padding: 10px;
+      background-color: #ff6f61;
+      border: none;
+      color: white;
+      font-weight: 700;
+      cursor: pointer;
+      border-radius: 0 4px 4px 0;
+      transition: background-color 0.3s;
+    }
+    form button:hover {
+      background-color: #e75a4f;
+    }
+    footer {
+      background: #1a1a2e;
+      color: #bbb;
+      text-align: center;
+      padding: 15px 20px;
+      font-size: 0.9rem;
+      margin-top: 60px;
+    }
+    @media(max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 10px;
+      }
+      form input[type="email"] {
+        width: 100%;
+        border-radius: 4px;
+        margin-bottom: 10px;
+      }
+      form button {
+        width: 100%;
+        border-radius: 4px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>CapitalistUA</h1>
+  <nav>
+    <a href="#about">Про проєкт</a>
+    <a href="#news">Новини</a>
+    <a href="#subscribe">Підписка</a>
+    <a href="#contacts">Контакти</a>
+  </nav>
+</header>
+
+<main>
+  <section id="about">
+    <h2>Про CapitalistUA</h2>
+    <p>CapitalistUA — це твій провідник у світі інвестицій та фінансів. Тут ми ділимось актуальними новинами, глибоким аналізом ринків і корисними порадами, щоб ти міг розумно керувати своїми грошима і примножувати капітал.</p>
+  </section>
+
+  <section id="news">
+    <h2>Останні новини</h2>
+    <article>
+      <h3>Як інфляція впливає на твої інвестиції</h3>
+      <p>Дізнайся, як інфляція змінює вартість грошей і що робити, щоб захистити свій капітал.</p>
+    </article>
+    <article>
+      <h3>5 головних трендів фондового ринку у 2025 році</h3>
+      <p>Огляд ключових подій і секторів, які варто відслідковувати кожному інвестору.</p>
+    </article>
+  </section>
+
+  <section id="subscribe">
+    <h2>Підпишись на оновлення</h2>
+    <form onsubmit="event.preventDefault(); alert('Дякуємо за підписку!'); this.reset();">
+      <input type="email" placeholder="Введи свою пошту" required />
+      <button type="submit">Підписатися</button>
+    </form>
+  </section>
+
+  <section id="contacts">
+    <h2>Контакти</h2>
+    <p>Пиши нам на email: <a href="mailto:contact@capitalistua.ua">contact@capitalistua.ua</a></p>
+    <p>Або слідкуй у соцмережах:</p>
+    <p>
+      <a href="#" style="color:#ff6f61; text-decoration:none;">Telegram</a> | 
+      <a href="#" style="color:#ff6f61; text-decoration:none;">Instagram</a> | 
+      <a href="#" style="color:#ff6f61; text-decoration:none;">YouTube</a>
+    </p>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 CapitalistUA. Всі права захищені.
+</footer>
+
+</body>
+</html>
